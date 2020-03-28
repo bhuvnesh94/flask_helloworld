@@ -8,7 +8,7 @@ pipeline {
         }
          stage('docker image run') {
             steps {
-                sh 'docker run -d --name flask_helloworld -p 80:80 bhuvnesh94/flask-helloworld'
+                sh 'docker-compose up -d'
             }
         }
          stage('docker image push to dockerhub') {
