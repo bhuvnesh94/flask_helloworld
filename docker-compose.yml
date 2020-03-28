@@ -1,0 +1,7 @@
+version: '3'
+services:
+  flask-helloworld:
+    image: bhuvnesh94/flask-helloworld:latest
+    container_name: flask-helloworld
+    ports:
+    - 80:80
