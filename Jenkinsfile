@@ -6,7 +6,7 @@ pipeline {
                 sh 'docker build -t bhuvnesh94/flask-helloworld  .'
             }
         }
-         stage('docker image run') {
+         stage('docker container run') {
             steps {
                 sh 'docker-compose up -d'
             }
